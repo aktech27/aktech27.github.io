@@ -4,6 +4,9 @@
 
 <br/>
 
+<p align="center">
+  <a href="https://github.com/ashutosh00710/github-readme-activity-graph"><img src="https://github-readme-activity-graph.vercel.app/graph?username=aktech27&bg_color=282836&color=ff6e96&line=79dafa&point=feffff&area=true&hide_border=true" alt="aktech27" /></a>
+</p>
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=aktech27&theme=dracula&column=3&margin-w=15&margin-h=15" alt="aktech27" /></a> </p>
 
 - 🔭 I’m currently working on [StreakyDo](https://github.com/aktech27/streaky-do)
