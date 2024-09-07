@@ -1,4 +1,7 @@
-<p align="right"> <img src="https://komarev.com/ghpvc/?username=aktech27&label=Profile%20views&color=0e75b6&style=flat" alt="aktech27" /> </p>
+<p align="right"> <img src="https://komarev.com/ghpvc/?username=aktech27&label=Profile%20views&color=brightgreen&style=for-the-badge" alt="aktech27" /> </p>
+
+[![ProfileCover](https://media.licdn.com/dms/image/v2/D5616AQENAv7oFX1sDg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1724286243963?e=1730937600&v=beta&t=Ti2TkCK-jkveWozEPasrXQuOC_we5iGntV5Q3d9itlE)](https://github.com/aktech27)
+<hr/>
 <h1 align="center">Hi 👋, I'm Ahamed Kabeer</h1>
 <h3 align="center">Passionate coder with a 3-year IT journey ✨, including a solid year in professional backend development ⚙️. Committed to the art of coding 🧑‍💻, I aspire to architect software solutions that seamlessly blend functionality and solve problems. Let's build the future together!📈</h3>
 
