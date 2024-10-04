@@ -45,9 +45,9 @@ const HeroSection = () => {
           </div>
         </div>
         <div className='col-span-5 place-self-center mt-4 lg:mt-0'>
-          <div className='rounded-full bg-[#181818] relative w-[250px] h-[250px] lg:w-[250px] lg:h-[250px]'>
+          <div className='rounded-full bg-[#181818] relative w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]'>
             <img
-              src='/src/assets/favicon.ico'
+              src='/assets/favicon.ico'
               alt='me'
               className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
               width={300}
