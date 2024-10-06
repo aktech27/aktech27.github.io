@@ -1,8 +1,8 @@
 'use client';
 
-const NavLink = ({ name, path, key }) => {
+const NavLink = ({ name, path }) => {
   return (
-    <li key={key}>
+    <li>
       <a
         href={path}
         className='block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white'

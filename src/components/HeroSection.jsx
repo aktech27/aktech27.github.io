@@ -7,6 +7,17 @@ const HeroSection = () => {
   return (
     <section>
       <div className='grid grid-cols-1 lg:grid-cols-12 my-4'>
+        <div className='col-span-5 place-self-center mt-4 lg:mt-0 lg:order-1'>
+          <div className='rounded-full bg-[#181818] relative w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]'>
+            <img
+              src='/assets/aktechtbg.png'
+              alt='me'
+              className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
+              width={300}
+              height={300}
+            />
+          </div>
+        </div>
         <div className='col-span-7 place-self-center place-items-center grid lg:place-items-start'>
 
           <h1 className='text-white max-w-2xl mb-4 lg:text-6xl text-4xl font-extrabold'>
@@ -42,17 +53,6 @@ const HeroSection = () => {
                 Download CV
               </span>
             </button>
-          </div>
-        </div>
-        <div className='col-span-5 place-self-center mt-4 lg:mt-0'>
-          <div className='rounded-full bg-[#181818] relative w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]'>
-            <img
-              src='/assets/favicon.ico'
-              alt='me'
-              className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
-              width={300}
-              height={300}
-            />
           </div>
         </div>
       </div>
