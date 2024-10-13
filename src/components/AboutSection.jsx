@@ -7,7 +7,7 @@ const AboutSection = () => {
   return (
     <section className='text-white'>
       <h2 className='text-4xl font-bold text-white mb-4'>About me</h2>
-      <div className="flex justify-center gap-6">
+      <div className="flex flex-col justify-center gap-6 lg:flex-row">
         <div className='flex-1 flex-grow-[2]'>
           <PcModelCanvas />
         </div>

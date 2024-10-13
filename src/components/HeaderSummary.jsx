@@ -9,7 +9,7 @@ const HeaderSummary = () => {
         {
           headerSummaryStats.map((item, index) => (
             <div key={index} className="flex-1 flex gap-4 items-center justify-center">
-              <div className='text-5xl xl:text-5xl font-extrabold'>{item.number}</div>
+              <div className='text-3xl lg:text-5xl font-extrabold'>{item.number}</div>
               <div className='text-sm'>{item.text}</div>
             </div>
           ))

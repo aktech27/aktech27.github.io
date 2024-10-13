@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import NavLink from './NavLink';
@@ -14,10 +15,15 @@ const NavBar = () => {
   };
 
   return (
-    <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-95'>
+    <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212]'>
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className='text-white text-3xl font-semibold'>
-          AK
+          <img
+            src='/assets/aktechtbg.png'
+            alt='LOGO'
+            width={50}
+            height={50}
+          />
         </a>
         <div className='mobile-menu block md:hidden'>
           {
