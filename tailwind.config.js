@@ -6,6 +6,9 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      primary: "var(--font-jetbrains-mono)"
+    },
     extend: {
       colors: {
         background: "var(--background)",
