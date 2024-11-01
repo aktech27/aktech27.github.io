@@ -4,7 +4,7 @@ import { headerSummaryStats } from '@/config/headerConfig';
 
 const HeaderSummary = () => {
   return (
-    <div className='container mx-auto mt-4 px-4 py-8 rounded-md shadow-sm shadow-gray-700 border-[1px] border-gray-600'>
+    <div className='container mx-auto px-4 py-8 rounded-md shadow-sm shadow-gray-700 border-[1px] border-gray-600'>
       <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto">
         {
           headerSummaryStats.map((item, index) => (

@@ -1,10 +1,12 @@
 'use client';
 
+import SectionHead from './SectionHead';
+
 const ExperienceSection = () => {
   return (
-    <div>
-      <h1 className='text-4xl text-white font-bold my-8'>My Experience</h1>
-      <ol className="relative border-s  border-gray-700">
+    <section id='experience'>
+      <SectionHead>My Experience</SectionHead>
+      <ol className="relative border-s border-gray-700">
         <li className="mb-10 ms-6">
           <span className="absolute flex items-center justify-center w-6 h-6 rounded-full -start-3 ring-8 ring-gray-900 bg-blue-900">
             <svg className="w-2.5 h-2.5  text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -56,7 +58,7 @@ const ExperienceSection = () => {
           <p className="mb-4 text-base font-normal text-gray-500 ">Details of the work done</p>
         </li>
       </ol>
-    </div>
+    </section>
   );
 };
 

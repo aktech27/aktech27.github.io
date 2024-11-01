@@ -5,7 +5,7 @@ export const navlinks = [
   },
   {
     name: 'Experience',
-    path: '#about'
+    path: '#experience'
   },
   {
     name: 'Contact',

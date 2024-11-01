@@ -8,11 +8,11 @@ import { links } from '@/config/linksConfig';
 
 const HeroSection = () => {
   return (
-    <section className='min-h-screen flex flex-col justify-evenly'>
+    <section className='min-h-[95vh] flex flex-col justify-evenly'>
       <div className='grid grid-cols-1 lg:grid-cols-12 my-4 h-[100%]'>
         <div className='col-span-4 place-self-center mt-4 lg:mt-0 lg:order-1'>
-          <div className='rounded-full bg-transparent relative w-[200px] h-[200px] lg:w-[350px] lg:h-[350px] overflow-hidden'>
-            <div className='bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 w-[250px] h-[250px] absolute transform -translate-x-1/2 translate-y-1/3 left-1/2 rounded-full blur-[20px]'></div>
+          <div className='rounded-full bg-transparent relative w-[200px] h-[200px] lg:w-[350px] lg:h-[350px] overflow-hidden mb-6'>
+            <div className='bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] absolute transform -translate-x-1/2 translate-y-1/3 left-1/2 rounded-full blur-[20px]'></div>
             <img
               src='/assets/me.png'
               alt='me'
