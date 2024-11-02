@@ -6,21 +6,21 @@ import SectionHead from './SectionHead';
 /* eslint-disable @next/next/no-img-element */
 const AboutSection = () => {
   return (
-    <section id='about' className='text-white scroll-mt-[80px]'>
+    <section id='about' className='text-white scroll-mt-[80px] min-h-[60vh]'>
       <SectionHead>About Me</SectionHead>
       <div className="flex flex-col-reverse justify-center gap-6 lg:flex-row">
-        <div className='flex-1 flex-grow-[2]'>
+        <div>
           <PcModelCanvas />
         </div>
-        <div className='flex-1 flex-grow-[3]'>
+        <div>
           <div>
-            MERN stack developer by passion, backend developer by profession. I specialize in Node.js backend development, where I build scalable, robust systems that power modern web applications. With expertise in Node.js, Express, and MongoDB, I create efficient APIs and backend services that deliver seamless user experiences.
+            MERN stack developer by passion, backend developer by profession.
           </div>
           <div>
-            While my professional focus is on the backend, I’m passionate about full-stack development and have basic skills in Next.js for server-side rendering and building full-stack applications. I’m also experienced in PostgreSQL and working with AWS services, which allows me to deploy and scale applications in cloud environments effectively.
+            I specialize in Node.js, utilizing Express for backend APIs and React for frontend UI.PostgreSQL and MongoDB are my go-to SQL and NoSQL databases, but I&apos;m open to exploring others as well. I’m always keen on learning new technologies and falling in love with the process of mastering them.
           </div>
           <div>
-            I thrive on tackling complex backend challenges and love working on scalable, high-performance systems. When I’m not working, I’m always exploring new technologies, from front-end frameworks to cloud architecture. Let’s connect if you&apos;re looking to collaborate on innovative projects!
+            When I&apos;m not coding, I love surfing YouTube, always looking for content on gaming, PC building, and system customization. I also enjoy solving Rubik&apos;s cubes and sometimes tackling Sudoku.
           </div>
         </div>
       </div>
