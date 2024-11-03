@@ -2,6 +2,7 @@ export const experiences = [
   {
     id: 1,
     company: 'Zealeye.AI Tech Solution · Full-time',
+    logoAssetName: 'zealeye',
     designation: 'Software Developer',
     tenure: 'March 2023 - Present',
     location: 'Chennai, India - Onsite',
@@ -16,6 +17,7 @@ export const experiences = [
   {
     id: 2,
     company: 'Cognizant Technology Solutions · Full-time',
+    logoAssetName: 'cognizant',
     designation: 'Systems Engineer',
     tenure: 'March 2022 - March 2023',
     location: 'Chennai, India - Remote',
@@ -30,6 +32,7 @@ export const experiences = [
   {
     id: 3,
     company: 'ByteBlanket · Full-time',
+    logoAssetName: 'byteblanket',
     designation: 'Junior QA',
     tenure: 'June 2021 - September 2021',
     location: 'Dubai, Dubai - Remote',
@@ -43,6 +46,7 @@ export const experiences = [
   {
     id: 4,
     company: 'ByteBlanket · Internship',
+    logoAssetName: 'byteblanket',
     designation: 'Software Developer',
     tenure: 'June 2020 - June 2021',
     location: 'Dubai, Dubai - Remote',

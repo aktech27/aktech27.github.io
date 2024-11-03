@@ -1,19 +1,22 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 
-const ExperienceContent = ({ company, designation, tenure, location, isCurrent, description }) => {
+const ExperienceContent = ({ company, logo, designation, tenure, location, isCurrent, description }) => {
   return (
-    <li className="mb-10 ml-12">
-      <span className="absolute -left-8 flex items-center justify-center size-[60px] rounded-full ring-8 ring-gray-900 bg-blue-900">
-        <svg className="w-2.5 h-2.5  text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-        </svg>
+    <li className="mb-10 ml-4 md:ml-12 px-6 py-3 border-slate-200 border-b-4 bg-gradient-to-b from-slate-900 rounded-md">
+      <span className="absolute -left-4 md:-left-8 flex items-center justify-center size-[30px] md:size-[60px] rounded-full ring-4 md:ring-8 ring-gray-900 bg-blue-900 overflow-hidden">
+        <img
+          src={`/assets/${logo}.jpg`}
+          alt={`${logo}-logo`}
+          className='object-contain'
+        />
       </span>
-      <h3 className="flex items-center mb-1 text-lg font-semibold text-white">
+      <h3 className="flex items-center mb-1 text-lg md:text-xl font-semibold text-white">
         {designation} {isCurrent && <span className="text-sm font-medium me-2 px-2.5 py-0.5 rounded bg-green-900 text-green-300 ms-3">Current</span>}
       </h3>
-      <span className="block mb-2 text-md font-normal leading-none text-blue-400">{company}</span>
-      <time className="block mb-2 text-sm font-light leading-none text-gray-100">{tenure} | {location}</time>
-      <ul className="mb-4 text-base font-normal text-gray-400">
+      <span className="block mb-2 text-sm md:text-md font-normal leading-none text-gray-300">{company}</span>
+      <time className="block mb-2 text-xs md:text-sm font-light leading-none text-blue-500">{tenure} | {location}</time>
+      <ul className="mb-4 text-xs md:text-base font-normal text-gray-400 list-disc">
         {
           description.map((data, i) => (
             <li className='mb-2 ml-4' key={i}>
