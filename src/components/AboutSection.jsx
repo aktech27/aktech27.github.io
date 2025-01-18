@@ -9,7 +9,7 @@ const AboutSection = () => {
     <section id='about' className='text-white scroll-mt-[80px] min-h-[60vh]'>
       <SectionHead>About Me</SectionHead>
       <div className="flex flex-col-reverse justify-center gap-6 lg:flex-row">
-        <div>
+        <div className='h-[30vh] lg:h-auto'>
           <PcModelCanvas />
         </div>
         <div>

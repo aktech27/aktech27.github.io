@@ -10,14 +10,12 @@ const Model = () => {
   const pc = useGLTF('/assets/gaming_desktop_pc/scene.gltf');
   return (
     <mesh>
-      <hemisphereLight intensity={0.25} groundColor='black' />
+      <hemisphereLight intensity={0.75} groundColor='black' />
       <pointLight intensity={1} />
-      <spotLight position={[-20, 50, 10]} angle={0.5} penumbra={1} intensity={1} castShadow shadow-mapSize={1024} />
       <primitive
-        scale={1}
         object={pc.scene}
-        position={[0, -3.25, -1.5]}
-        rotation={[0.01, -0.5, -0.05]}
+        position={[0.25, -2.25, -1.5]}
+        rotation={[0.01, -0.15, -0.1]}
       />
     </mesh>
   );
@@ -38,6 +36,7 @@ const PcModelCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           autoRotate
+          autoRotateSpeed={0.25}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
