@@ -56,7 +56,7 @@ const NavBar = () => {
           </ul>
         </div>
       </div>
-      {isOpen ? <SideBar /> : null}
+      {isOpen ? <SideBar handleClose={() => setIsOpen(false)} /> : null}
     </nav>
   );
 };
