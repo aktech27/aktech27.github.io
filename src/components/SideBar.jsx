@@ -1,16 +1,20 @@
 import { navlinks } from '@/config/navConfig';
 import NavLink from './NavLink';
 
-const SideBar = () => {
+const SideBar = ({ handleClose }) => {
   return (
     <ul className='flex flex-col py-4 items-center h-screen'>
       {
         navlinks.map((nav, index) => (
-          <NavLink
-            name={nav.name}
-            path={nav.path}
+          <div
+            onClick={handleClose}
             key={index}
-          />
+          >
+            <NavLink
+              name={nav.name}
+              path={nav.path}
+            />
+          </div>
         ))
       }
     </ul>

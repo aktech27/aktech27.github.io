@@ -9,13 +9,10 @@ const AboutSection = () => {
     <section id='about' className='text-white scroll-mt-[80px] min-h-[60vh]'>
       <SectionHead>About Me</SectionHead>
       <div className="flex flex-col-reverse justify-center gap-6 lg:flex-row">
-        <div className='h-[30vh] lg:h-auto'>
+        <div className='h-[30vh] lg:h-auto lg:w-[40%]'>
           <PcModelCanvas />
         </div>
-        <div>
-          <div>
-            MERN stack developer by passion, backend developer by profession.
-          </div>
+        <div className='lg:w-[60%]'>
           <div>
             I specialize in Node.js, utilizing Express for backend APIs and React for frontend UI.PostgreSQL and MongoDB are my go-to SQL and NoSQL databases, but I&apos;m open to exploring others as well. I’m always keen on learning new technologies and falling in love with the process of mastering them.
           </div>

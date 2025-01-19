@@ -21,8 +21,8 @@ const ContactSection = () => {
   return (
     <section id='contact' className='text-white scroll-mt-[80px] min-h-[60vh]'>
       <SectionHead>Let&apos;s Connect</SectionHead>
-      <div class="mt-6">
-        <div class="grid sm:grid-cols-2 items-start gap-12 p-8 mx-auto max-w-5xl bg-gradient-to-b from-slate-900 rounded-md">
+      <div className="mt-6">
+        <div className="grid sm:grid-cols-2 items-start gap-12 p-8 mx-auto max-w-5xl bg-gradient-to-b from-slate-900 rounded-md">
           <form ref={formRef} onSubmit={handleSubmit} className="ml-auto space-y-4">
             <input type='text' name='name' placeholder='Name' className="w-full bg-slate-800 placeholder-slate-300 text-white rounded-md py-2.5 px-4 border text-sm outline-none focus:border-blue-500" />
             <input type='email' name='email' placeholder='Email' className="w-full bg-slate-800 placeholder-slate-300 text-white rounded-md py-2.5 px-4 border text-sm outline-none focus:border-blue-500" />
