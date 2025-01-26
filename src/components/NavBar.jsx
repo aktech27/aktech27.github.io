@@ -1,11 +1,10 @@
-/* eslint-disable @next/next/no-img-element */
 'use client';
-
 import NavLink from './NavLink';
 import SideBar from './SideBar';
 import { useState } from 'react';
 import { navlinks } from '@/config/navConfig';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import Image from 'next/image';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,8 +17,8 @@ const NavBar = () => {
     <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212]'>
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className='text-white text-3xl font-semibold'>
-          <img
-            src='/assets/aktechtbg.png'
+          <Image
+            src='/assets/aktechtbg.webp'
             alt='LOGO'
             width={50}
             height={50}

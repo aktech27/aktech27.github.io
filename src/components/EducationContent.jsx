@@ -7,7 +7,7 @@ const EducationContent = () => {
       <div className="flex flex-col items-center bg-gray-800 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl">
         <Image
           className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-          src="/assets/gnc.jpg"
+          src="/assets/gnc.webp"
           alt="Guru Nanak College"
           width={48}
           height={96}
@@ -20,7 +20,7 @@ const EducationContent = () => {
       <div className="flex flex-col items-center bg-gray-800 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl">
         <Image
           className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-          src="/assets/jain.png"
+          src="/assets/jain.webp"
           alt="Guru Nanak College"
           width={48}
           height={96}

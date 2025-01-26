@@ -1,12 +1,14 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from 'next/image';
 import React from 'react';
 
 const ExperienceContent = ({ company, logo, designation, tenure, location, isCurrent, description }) => {
   return (
     <li className="mb-10 ml-4 md:ml-12 px-6 py-3 border-slate-200 border-b-4 bg-gradient-to-b from-slate-900 rounded-md">
       <span className="absolute -left-4 md:-left-8 flex items-center justify-center size-[30px] md:size-[60px] rounded-full ring-4 md:ring-8 ring-gray-900 bg-blue-900 overflow-hidden">
-        <img
-          src={`/assets/${logo}.jpg`}
+        <Image
+          height={100}
+          width={100}
+          src={`/assets/${logo}.webp`}
           alt={`${logo}-logo`}
           className='object-contain'
         />
