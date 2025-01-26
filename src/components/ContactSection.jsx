@@ -13,8 +13,8 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsDisabled(true);
-    emailJS.sendForm(process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, formRef.current, {
-      publicKey: process.env.NEXT_PUBLIC_EMAIL_PUBLIC_ID,
+    emailJS.sendForm(process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID, process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID, formRef.current, {
+      publicKey: process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY,
     }).then(() => {
       setToast({ visible: true, message: 'Successfully sent', severity: 'success' });
       formRef.current.reset();
