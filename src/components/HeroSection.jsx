@@ -13,6 +13,7 @@ const HeroSection = () => {
           <div className='rounded-full bg-transparent relative w-[200px] h-[200px] lg:w-[350px] lg:h-[350px] overflow-hidden mb-6'>
             <div className='bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] absolute transform -translate-x-1/2 translate-y-1/3 left-1/2 rounded-full blur-[20px]'></div>
             <Image
+              loading='eager'
               height={315}
               width={300}
               src='/assets/me.webp'
