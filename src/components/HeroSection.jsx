@@ -4,7 +4,7 @@ import HeaderSummary from './HeaderSummary';
 import { CloudArrowDownIcon } from '@heroicons/react/24/solid';
 import { links } from '@/config/linksConfig';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 const HeroSection = () => {
   return (

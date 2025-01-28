@@ -1,7 +1,7 @@
 'use client';
 
 import { headerSummaryStats } from '@/config/headerConfig';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 const HeaderSummary = () => {
   return (
