@@ -1,10 +1,32 @@
+import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import React from 'react';
+import { motion, useAnimation, useInView } from 'motion/react';
 
 const ExperienceContent = ({ company, logo, designation, tenure, location, isCurrent, description }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
+  const animationControl = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      animationControl.start('visible');
+    }
+  }, [isInView, animationControl]);
+
   return (
-    <li className="mb-10 ml-4 md:ml-12 px-6 py-3 border-slate-200 border-b-4 bg-gradient-to-b from-slate-900 rounded-md">
-      <span className="absolute -left-4 md:-left-8 flex items-center justify-center size-[30px] md:size-[60px] rounded-full ring-4 md:ring-8 ring-gray-900 bg-blue-900 overflow-hidden">
+    <motion.li
+      ref={ref}
+      variants={{
+        hidden: { opacity: 0, y: '50%' },
+        visible: { opacity: 1, y: 0 }
+      }}
+      initial='hidden'
+      animate={animationControl}
+      transition={{ duration: 0.25, y: { type: "spring", visualDuration: 0.3, bounce: 0.25 } }}
+      className="mb-10 ml-4 md:ml-12 px-6 py-3 border-slate-200 border-b-4 bg-gradient-to-b from-slate-900 rounded-md">
+      <span className="absolute -left-4 md:-left-8 flex items-center justify-center size-[30px] md:size-[60px] rounded-full ring-4 md:ring-8 ring-gray-900 bg-blue-900 overflow-hidden"
+      >
         <Image
           height={100}
           width={100}
@@ -27,7 +49,7 @@ const ExperienceContent = ({ company, logo, designation, tenure, location, isCur
           ))
         }
       </ul>
-    </li>
+    </motion.li>
   );
 };
 
