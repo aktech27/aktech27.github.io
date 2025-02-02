@@ -4,12 +4,27 @@ import HeaderSummary from './HeaderSummary';
 import { CloudArrowDownIcon } from '@heroicons/react/24/solid';
 import { links } from '@/config/linksConfig';
 import Image from 'next/image';
+import { motion } from 'motion/react';
 
 const HeroSection = () => {
   return (
     <section className='min-h-[95vh] flex flex-col justify-evenly'>
       <div className='grid grid-cols-1 lg:grid-cols-12 my-4 h-[100%]'>
-        <div className='col-span-4 place-self-center mt-4 lg:mt-0 lg:order-1'>
+        <motion.div
+          className='col-span-4 place-self-center mt-4 lg:mt-0 lg:order-1'
+          initial={{
+            opacity: 0,
+            x: '100%'
+          }}
+          animate={{
+            opacity: 1,
+            x: 0
+          }}
+          transition={{
+            duration: 0.4,
+            x: { type: "spring", visualDuration: 0.4, bounce: 0.5 }
+          }}
+        >
           <div className='rounded-full bg-transparent relative w-[200px] h-[200px] lg:w-[350px] lg:h-[350px] overflow-hidden mb-6'>
             <div className='bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] absolute transform -translate-x-1/2 translate-y-1/3 left-1/2 rounded-full blur-[20px]'></div>
             <Image
@@ -21,8 +36,22 @@ const HeroSection = () => {
               className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain size-[250px] md:size-[300px]'
             />
           </div>
-        </div>
-        <div className='col-span-8 place-self-center place-items-start gap-4'>
+        </motion.div>
+        <motion.div
+          initial={{
+            opacity: 0,
+            x: '-100%'
+          }}
+          animate={{
+            opacity: 1,
+            x: 0
+          }}
+          transition={{
+            duration: 0.4,
+            x: { type: "spring", visualDuration: 0.4, bounce: 0.5 }
+          }}
+          className='col-span-8 place-self-center place-items-start gap-4'
+        >
           <h1 className='mb-2 lg:mb-4 font-extrabold'>
             <span className='text-transparent text-3xl md:text-4xl lg:text-5xl xl:text-7xl bg-clip-text bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 '>
               Hi there <span className='text-white'>👋</span> I&apos;m {" "}
@@ -79,7 +108,7 @@ const HeroSection = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <HeaderSummary />
     </section>

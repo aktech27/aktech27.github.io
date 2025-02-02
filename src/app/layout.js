@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${jetBrainsMono.variable} antialiased`}      >
+      <body className={`${jetBrainsMono.variable} antialiased overflow-x-hidden`}      >
         {children}
       </body>
     </html>
